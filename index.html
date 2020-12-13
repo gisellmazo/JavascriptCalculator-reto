@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Mi Calculadora</title>
+  </head>
+  <body>
+    <div id="calculadora">
+      <div class="pantalla">
+        <h2 class="muestraOperacion" id="muestraOperacion"> </h2>
+        <h1 class="resultado" id="display"> </h1>
+      </div>
+      <div class="botones">
+        <div class="botones1">
+            <div class="linea1">
+                <button class="operacion" id="clear" onclick="clearDisplay()">C</button>
+                <button class="operacion" id="divide" onclick="updateDisplay('divide')">÷</button>
+                <button class="operacion" id="multiply" onclick="updateDisplay('multiply')">x</button>
+                
+              </div>
+              <div class="linea2">
+                <button class="numero" id="one" onclick="updateDisplay(1)">1</button>
+                <button class="numero" id="two" onclick="updateDisplay(2)">2</button>
+                <button class="numero" id="three" onclick="updateDisplay(3)">3</button>
+              </div>
+              <div class="linea3">
+                <button class="numero" id="four" onclick="updateDisplay(4)">4</button>
+                <button class="numero" id="five" onclick="updateDisplay(5)">5</button>
+                <button class="numero" id="six" onclick="updateDisplay(6)">6</button>
+                
+              </div>
+              <div class="linea4">
+                <button class="numero" id="seven" onclick="updateDisplay(7)">7</button>
+                <button class="numero" id="eight" onclick="updateDisplay(8)">8</button>
+                <button class="numero" id="nine" onclick="updateDisplay(9)">9</button>
+              </div>
+              <div class="linea5">
+                <button class="numerocero" id="zero" onclick="updateDisplay(0)">0</button>
+                <button class="operacion" id="decimal" onclick="updateDisplay('decimal')">.</button>
+                
+                
+              </div>
+        </div>
+        <div class="botones2">
+            <div class="sumaeigual">
+                <button class="operacion" id="subtract" onclick="updateDisplay('suntract')">-</button>
+                <button class="operacionsuma" id="add" onclick="updateDisplay('add')">+</button>
+                <button class="operacionsuma" id="equals" onclick="updateDisplay('equals')">=</button>
+            </div>
+         </div>
+      </div>
+     
+
+    </div>
+
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+  </body>
+</html>
